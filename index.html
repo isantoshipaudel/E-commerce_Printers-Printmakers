@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Printer e-commerce site">
+    <meta name="keywords" content="Printer, Project, e-commerce">
+    <meta name="author" content="Ronish, Aviskar, Devanshi,Santoshi">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>PrintMakers | Home</title>
+    <style>
+        /****************************************Styling for Hero***********************************/
+        .first-img {/*Declaring width, height and object-fit for Hero image*/
+            width: 100%;
+            height: 70vh;
+            object-fit: cover;
+        }
+
+        .text-on-1stimg { /*Positioning the Text above the image*/
+            position: absolute;
+            text-align: center;
+            inset: 0;
+            margin: auto;
+            top: 35vh;
+            color: var(--Bwhite);
+        }
+
+        .text-on-1stimg h1 {/*Declaring font family*/
+            font-family: 'Homenaje', sans-serif;
+        }
+
+        .text-on-1stimg button{/*Positioning the button above the image*/
+            margin-top: 20px;
+        }
+
+        .text-on-1stimg button a{/*Styling button*/
+            background-color: var(--Lbrown);
+            border: none;
+            padding: 10px;
+            font-family: 'Istok Web', sans-serif;
+            font-weight: 700;
+            color: var(--green);
+        }
+
+        .text-on-1stimg button a:hover {/*Changing style while hovering on buttin*/
+            color: var(--Bwhite);
+            background-color: var(--green);
+            transition: all .3s;
+        }
+        /***************************PRODUCT ON HOME PAGE***************************/
+        .product h1 { /*Positioning and styleing the header*/
+            text-align: center;
+            font-size: xx-large;
+            padding: 50px 0px;
+            color: var(--green);
+        }
+
+        .product-border {/*Styling borders of product listed*/
+            border: 3px solid var(--green);
+            padding: 10px;
+            box-shadow: 5px 5px 10px 5px #F9E8D9;
+        }
+
+        .product-info {/*Positioning Product Info*/
+            margin: 20px 0px;
+        }
+
+        .product-info h3 {/*Styling and Positioning the text on product-info*/
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .product .product-border a {/*Styling anchor tag on product*/
+            color: var(--green);
+        }
+
+        .product button {/*Position the buttons of product*/
+            margin: 20px 0px 10px 0px;
+            float: right;
+        }
+        .product .product-border a{/*Styling button of anchor tag*/
+            background-color: #284344;
+            color: #F9E8D9;
+            border: #284344 2px solid;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .product .product-border a:hover{/*Changing style of button on anchor tag while hovering*/
+            background-color: #F9E8D9;
+            color: #284344;
+            transition: 0.5s;
+        }
+        .more-products button a{/*Styling button that directs to product page*/
+            color: #F9E8D9;
+            background-color: #284344;padding: 10px;
+            font-weight: bold;
+            border: #284344 2px solid;
+        }
+        .more-products button a:hover{/*Changing styles of the button that directs to product page while hovering*/
+            background-color: #F9E8D9;
+            color: #284344;
+            transition: .5s
+        }
+        /************************************About Us***************************************/
+        .about-us {/*Positioning the texts of about us*/
+            text-align: center;
+            padding: 60px 0px;
+        }
+
+        .about-us h1 {/*Positioning the h1 tag of about us*/
+            margin-bottom: 20px;
+            color: var(--green);
+        }
+
+        .about-us p {/*Styling the p tag in about us */
+            font-size: larger;
+        }
+        .about-us button{/*Positioning the button that directs to the about page*/
+            margin: 20px 0px 10px 0px;
+        }
+        .about-us button a{/*Styling the button that directs to the about page*/
+            background-color: var(--green);
+            color: #ffcaa2;
+            padding: 10px;
+            font-weight: bold;
+            padding: 10px 40px;
+        }
+
+        .about-us button a:hover {/*Changing the style of the button that directs to the about page*/
+            background-color: var(--Lbrown);
+            color: var(--green);
+            transition: .5s;
+        }
+    </style>
+</head>
+
+<body>
+    <!--PROVIING HEADER TAG-->
+    <header>
+        <div class="con"> <!--Wrapper for Header-->
+            <ul class="header">
+                <li><a href="">|| Help ||</a></li>
+                <li><a href="">Find Us ||</a></li>
+                <li><a href="./pages/contact.html">Sign In ||</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--PROVIDING NAV TAG FOR NAVIGATION-->
+    <nav>
+        <div class="con">
+            <div class="flex navbar"><!--WRAPPER FOR NAVIGATION BAR USING FLEXBOX-->
+                <div class=" logo"><!--CREATING DIV FOR PROVIDING LOGO-->
+                    <a href="./index.html">
+                        <h1>Print<span style="color: #ffcaa2 ;">Makers</span> </h1>
+                    </a>
+                </div>
+                <div class="pages"><!--CREATING DIV FOR PROVIDING NAVIGATION BAR-->
+                    <ul class="flex" style="gap: 10px;"><!--USING FLEX-->
+                        <li><a class="current" href="./index.html">HOME</a></li>
+                        <li><a class="" href="./pages/blogpage.html">BLOG</a></li>
+                        <li><a class="" href="./pages/product.html">PRODUCTS</a></li>
+                        <li><a class="" href="./pages/research.html">RESEARCH</a></li>
+                        <li><a class="" href="./pages/about.html">ABOUT US</a></li>
+                        <li><a class="" href="./pages/contact.html">CONTACT</a></li>
+                    </ul>
+                </div><!--CREATING DIV FOR ICON BAR-->
+                <div>
+                    <ul class="flex" style="gap: 10px;"><!--USING FLEX-->
+                        <li><input class="search" type="search" style="" name="search" id="" placeholder=" Search"></li>
+                        <li><a href=""><img src="./img/hearts.png" width="20px" alt=""></a></li>
+                        <li><a href=""><img src="./img/shopping-cart-black-shape.png" width="20px" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--ALLOCATING SPACE FOR ADDING MAIN CONTENT-->
+    <main>
+        <!----------------------------- BLOG----------------------------------->
+        <section
+            <div style="position: relative;">
+                <img src="./img/picture_1.jpg" class="first-img" alt="">
+                <div class="text-on-1stimg">
+                    <h1 style="font-size: 60px;">Manufacturing High Quality <span
+                            style="color: #ffcaa2;">PRINTERS</span></h1>
+                    <br>
+                    <h3 style="padding-bottom: 20px;">SINCE 1975</h3>
+
+                    <p>Welcome to PrintMakers, your destination for top-tier printers. We specialize in manufacturing
+                        high-quality printers, combining innovation with precision. Explore excellence in printing with
+                        PrintMakers – where performance meets perfection.
+                    </p>
+                    <button><a href="">Learn More</a></button>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------------------PRODUCTS----------------------------->
+        <section class="product" style="padding-bottom: 80px;">
+            <div class="con">
+                <h1>Our Products</h1>
+
+                <div class="flex p1 con" style="justify-content: center; gap: 70px;">
+
+                    <div class="product-border">
+                            <img src="./img/product_1.jpg" alt="">
+                            <div class="product-info">
+                                <h3>All-in-one Printer</h3>
+                                <p>The perfect choice: multiple functions in a single device.</p>
+                                <button><a href="">Add to cart</a></button>
+                            </div>
+                    </div>
+
+                    <div class="product-border">
+                            <img src="./img/product_2.jpg" alt="">
+                            <div class="product-info">
+                                <h3>Laser Printer</h3>
+                                <p>Experience speedy printing in vibrant color or clean, crisp black & white.</p>
+                                <button><a href="">Add to Cart</a></button>
+                            </div>
+                    </div>
+
+                    <div class="product-border">
+                            <img src="./img/product_3.jpg" alt="">
+                            <div class="product-info">
+                                <h3>Inkjet Printer</h3>
+                                <p>Get superior prints and outstanding clarity, for results that are nothing short of
+                                    excellence.</p>
+                                <button><a href="">Add to Cart</a></button>
+                            </div>
+                    </div>
+
+                </div>
+
+                <div style="padding-top: 20px;" class="more-products">
+                    <button><a href="./pages/product.html" style="">More Products</a></button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <hr style="background-color: #284344; height: 3px;">
+
+        <!---------------------------------ABOUT US---------------------------->
+        <section class="about-us con">
+
+            <div>
+                <h1>About Us</h1>
+                <p>Welcome to PrintMakerss, where the art and science of printing converge.We here at printers believe in quality and delivering at the right time.
+
+                    We have collected decade worth of experince and we continue to deliver like we did in past.Our innovation made us to exist upto here and We continue to do so.</p>
+                <button><a href="./pages/about.html">Learn More</a></button>
+            </div>
+
+        </section>
+
+        <!------------------------------FOOTER--------------------------------->
+
+        <footer style="background-color: #284344;">
+
+            <div class="flex con" style="justify-content:space-around ; gap: 40px; align-items: start;">
+
+                <div>
+                    <h4>Business & Products</h4>
+                    <ul>
+                        <li><a href="">Product Support</a></li>
+                        <li><a href="">Product Support Assistant</a></li>
+                        <li><a href="">Terms of Sale(Opens in a new tab)</a></li>
+                        <li><a href="">Product Registration</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>About Team 3</h4>
+                    <ul>
+                        <li><a href="./pages/aaviskarCV.html">Aviskar</a></li>
+                        <li><a href="./pages/ronishCV.html">Ronish</a></li>
+                        <li><a href="./pages/santoshiCV.html">Santoshi</a></li>
+                        <li><a href="./pages/devanshiCV.html">Devanshi</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Researches</h4>
+                    <ul>
+                        <li><a href="https://www.nike.com/" target="_blank">Nike</a></li>
+                        <li><a href="https://www.brother-usa.com/home/printers-fax" target="_blank">Brother</a></li>
+                        <li><a href="https://www.usa.canon.com/" target="_blank">Canon</a></li>
+                        <li><a href="https://www.adidas.com/us" target="_blank">Addidas</a></li>
+                    </ul>
+                </div>
+
+                <div class="contacts">
+                    <h4>Contacts</h4>
+                    <ul class="flex" style="gap: 10px;">
+                        <li><a href=""><img src="./img/facebook-logo.png" width="20px" alt=""></a></li>
+                        <li><a href=""><img src="./img/instagram-logo.png" width="20px" alt=""></a></li>
+                        <li><a href=""><img src="./img/linkedin.png" width="20px" alt=""></a></li>
+                        <li><a href=""><img src="./img/twitter.png" width="20px" alt=""></a></li>
+                    </ul>
+                    <p><a style="font-weight: bold; color: #F9E8D9;" href="./pages/contact.html">Sign-Up</a></p>
+                </div>
+
+            </div>
+        </footer>
+
+        <div style="text-align: center; background-color: #ffcaa2; color: #284344; padding: 15px 0px; font-size: 16px;">
+            <p>&copy; PrintMakers. ALL RIGHTS RESERVED. </p>
+        </div>
+    </main>
+</body>
+
+</html>
