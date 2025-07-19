@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Homenaje&family=Istok+Web:wght@400;700&family=Krona+One&display=swap');
+
+
+/********************* BASE CSS ************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Defining varaiable for colors used in this website*/
+:root{
+    --text: #ffffff;
+    --green:#284344;
+    --Lbrown:#ffcaa2;
+    --Bwhite: #F9E8D9;
+}
+/*ASSINGING FONT FAMILY TO WHOLE BODY*/
+body{
+    font-family: 'Istok Web', sans-serif;
+    overflow-x: hidden;
+}
+
+/*REMOVING TEXT DECORATION FOR ALL */
+a{text-decoration: none;}
+
+/*REMOVING LIST-STYLING FOR ALL */
+ul{list-style: none;}
+
+.con{max-width: 1200px; margin: auto;} /*WRAPPER*/
+
+/*DEFINING FLEX FOR CLASS flex*/
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*CSS FOR HEADER*/
+header{
+    height: 20px;
+    background-color: var(--Bwhite);
+}
+
+.header{
+    display: flex;
+    float: right;
+    gap: 10px;
+}
+
+header ul li a{
+    color: var(--green);
+    font-size: small;
+}
+
+h1{
+    font-size: 40px;
+}
+
+
+/* CSS FOR LOGO*/
+.logo a{
+    font-size: larger;
+    color: var(--Bwhite);
+    width: 10%;
+}
+.icon{
+    width: 10%;
+}
+
+/********************** CSS FOR NAVBAR***********************/
+.current{
+    color: var(--Lbrown);
+}
+.navbar{
+    width: 1200px;
+}
+nav{
+    color: var(--text);
+    background-color: var(--green);
+    padding: 16px;
+}
+nav ul li a{
+    color: var(--Bwhite);
+    font-weight: bold;
+    padding:0px 10px;
+    position: relative;
+    font-size: 16px;
+}
+
+.pages ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: var(--Bwhite);
+    height: 3px;
+    width: 0;
+    left: 0;
+    top: 25px;
+    transition: .5s;
+}
+
+.pages ul li a:hover:after{
+    width: 100%;
+}
+
+.search{
+    background-color: var(--Bwhite);
+    border: 0px;
+    border-radius: 4px;
+    color: #284344;
+    padding: 6px 0px;
+    width: 100px;
+}
+
+
+.icon ul li a{
+    color: var(--Bwhite);
+}
+
+
+/*************************************FOOTER******************************************/
+
+footer{
+    color: var(--Bwhite);
+    padding: 40px 0px;
+}
+
+footer ul li a{
+    color: var(--Bwhite);
+}
+
+footer li{
+    margin: 10px 0px;
+}
+
+footer h4{
+    font-size: 20px;
+}
+
+button{
+    border: none;
+}

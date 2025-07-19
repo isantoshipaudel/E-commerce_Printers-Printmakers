@@ -1,0 +1,405 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>PrintMakers | Products</title>
+    <meta name="description" content="Description of product page">
+    <meta name=keyword content="HTML">
+    <meta name="author" content="Santoshi Paudel">
+    <link rel="stylesheet" href="../style/index.css">
+    <style type="text/css">
+        /********************** CSS FOR PRODUCT PAGE***********************/
+        .content {
+            background-image: url(../img/printer.png);
+            background-color: #284344;
+            height: 100vh;
+            background-size: 50%;
+            background-position: 500px;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .content p {
+            font-size: 22px;
+            color: white;
+            padding-left: 30px;
+
+        }
+
+        .Printers {
+            display: grid;
+            display: flex;
+            grid-template-columns: repeat(auto, minmax(260px, auto));
+            grid-gap: 3rem;
+            transition: all.40s;
+            border-spacing: 310px;
+            box-sizing: 310px;
+        }
+
+        .heading {
+            font-weight: bold;
+            font-style: italic;
+            font-size: xx-large;
+            padding: 10px
+        }
+
+        .product {
+            background-color: white;
+            box-shadow: 5px 5px 10px 5px #F9E8D9;
+            width: 310px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 3px solid #284344;
+            color: black;
+            text-align: left;
+        }
+
+        .product p {
+            margin-top: 10px;
+        }
+
+        .product button {
+            background-color: #284344;
+            color: black;
+            padding: 10px 15px;
+            font-weight: bold;
+            float: right;
+            background-color: #ffcaa2;
+        }
+
+        .product img {
+            width: 100%;
+            height: 250px;
+            padding: 5px;
+            margin: 20px, 0px;
+        }
+
+        .product img:hover {
+            transition: transform .2s;
+            transform: scale(0.7);
+        }
+
+        .product button:hover {
+            transform: scale(1.1);
+        }
+
+        .popup-message {
+
+            display: none;
+            color: black;
+            text-align: center;
+            font-size: 18px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 3px solid #284344
+        }
+
+
+        .flex.con {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <!--PROVIING HEADER TAG-->
+    <header>
+        <div class="con"> <!--Wrapper for Header-->
+            <ul class="header">
+                <li><a href="">|| Help ||</a></li>
+                <li><a href="">Find Us ||</a></li>
+                <li><a href="./contact.html">Sign In ||</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--PROVIDING NAV TAG FOR NAVIGATION-->
+    <nav>
+        <div class="flex con"><!--WRAPPER FOR NAVIGATION BAR USING FLEXBOX-->
+            <div class="logo"><!--CREATING DIV FOR PROVIDING LOGO-->
+                <a href="../index.html">
+                    <h1>Print<span style="color: #ffcaa2 ;">Makers</span> </h1>
+                </a>
+            </div>
+            <div class="pages"><!--CREATING DIV FOR PROVIDING NAVIGATION BAR-->
+                <ul class="flex" style="gap: 10px;"><!--USING FLEX-->
+                    <li><a class="" href="../index.html">HOME</a></li>
+                    <li><a class="" href="./blogpage.html">BLOG</a></li>
+                    <li><a class="current" href="../pages/product.html">PRODUCTS</a></li>
+                    <li><a class="" href="../pages/research.html">RESEARCH</a></li>
+                    <li><a class="" href="./about.html">ABOUT US</a></li>
+                    <li><a class="" href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div><!--CREATING DIV FOR ICON BAR-->
+                <ul class="flex" style="gap: 10px;"><!--USING FLEX-->
+                    <li><input class="search" type="search" style="" name="search" id="" placeholder=" Search"></li>
+                    <li><img src="../img/hearts.png" width="20px" alt=""></a></li>
+                    <li><a href=""><img src="../img/shopping-cart-black-shape.png" width="20px" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--PRODUCT PAGE STARTS-->
+    <section style="background-color: #284344">
+        <div class="con">
+
+            <div class="content">
+                <section>
+                    <h1 style="text-align: left;font-size: xx-large; padding-left: 30px ;color: #ffcaa2;">
+                        NEW PRINTER COLLECTIONS 2024</h1>
+                    <p> Print Your Experiences <br> And Ideas With The Most Trusted Printers </p>
+                    <button
+                        style="background-color: #ffcaa2;color: black;padding: 10px 15px;font-weight: bold;margin:10px 30px 90px;           float: right; ">
+                        <a href="#printerSection" style="color: #284344;"> Shop Now</a></button>
+
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!--MAIN CONTENT OF PRODUCTS-->
+    <div class="heading">
+        <h1>
+            <marquee>Our Products</marquee>
+        </h1>
+    </div>
+    <section id="printerSection" class="Printers con">
+
+        <div class="product">
+            <img src="../img/injekprinter.png">
+            <h4 style="text-align: center">Inkjet Printer</h4>
+            <p>A popular choice for offices and home due to its high quality prints and low cost.</p>
+            <br>
+            <h4>$350</h4>
+            <button id="Added successfully"> Add To Cart</button>
+        </div>
+
+        <div class="product">
+            <img src=../img/product2.png>
+            <h4 style="text-align: center">Epson SureColor P700 </h4>
+            <p>A highly demanded printers by photographers as it gives high-quality prints.</p>
+            <br>
+            <h4>$390</h4>
+            <button id="Added successfully2">Add To Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="../img/product3.png">
+            <h4 style="text-align: center">HP Tech Printer</h4>
+            <p>A newly released printers which is use for variour purposes including home and official use.</p>
+            <br>
+            <h4>$400</h4>
+            <button id="Added successfully3">Add To Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="../img/product4.png">
+            <h4 style="text-align: center">Brother Color A3 Inkjet Multi-Function Printer</h4>
+            <p> A high qualily printer with multi-functionality,suitable for small offices.</p>
+            <br>
+            <h4>$500
+            </h4>
+            <button id="Added successfully4">Add To Cart</button>
+        </div>
+    </section>
+
+    <section class=heading>
+        <h1>
+            <marquee>Products On Sale (30% Off)</marquee>
+        </h1>
+    </section>
+
+    <div class="Printers con">
+        <div class="product">
+            <img src="../img/product5.png">
+            <h4 style="text-align: center">Lexmark laser printer</h4>
+            <p>Lexmark Monochrome Black & White Wireless Network Laser Printer.</p>
+            <br>
+            <h4>$550</h4>
+            <button id="Added successfully5">Add To Cart</button>
+        </div>
+        <div class="product">
+            <img src="../img/product.6.png">
+            <h4 style="text-align: center">Monochrome Laser printer</h4>
+            <p>A cost effective printer which can be kept with low maintanence.</p>
+            <br>
+            <h4>$570</h4>
+            <button id="Added successfully6">Add To Cart</button>
+        </div>
+        <div class="product">
+            <img src="../img/product7.png">
+            <h4 style="text-align: center">HP LaserJet </h4>
+            <p>Printer with HP+ and 6 Months Instant Ink.</p>
+            <br>
+            <h4>$600
+                <h4 />
+                <button id="Added successfully7">Add To Cart</button>
+        </div>
+        <div class="product">
+            <img src="../img/product8.png">
+            <h4 style="text-align: center">HP OfficeJet Pro</h4>
+            <p>Printer specialize in producing black and white prints.</p>
+            <br>
+            <h4>$650
+                <h4 />
+                <button id="Added successfully8">Add To Cart</button>
+        </div>
+    </div>
+
+    <section class="heading">
+        <h1>
+            <marquee>Latest Products</marquee>
+        </h1>
+    </section>
+
+    <div class="Printers con">
+        <div class="product">
+            <img src="../img/product9.png">
+            <h4 style="text-align: center">Desktop Laser printer</h4>
+            <p> Printer supports wireless conectivity and has user friendly interface.</p>
+            <br>
+            <h4>$700</h4>
+            <button id="Added successfully9">Add To Cart</button>
+        </div>
+        <div class="product">
+            <img src="../img/product10.png">
+            <h4 style="text-align: center">HP Laser Jet pro</h4>
+            <p>Printer is powerful, versatile and easy to use.</p>
+            <br>
+            <h4>$790</h4>
+            <button id="Added successfully10">Add To Cart</button>
+        </div>
+        <div class="product">
+            <img src="../img/product11.png">
+            <h4>Laser MFP Printer</h4>
+            <p>InkJet, LaserJet, Tank, and All-in-One Printers</p>
+            <br>
+            <h4>$800
+                <h4 />
+                <button id="Added successfully11">Add To Cart</button>
+        </div>
+        <div class="product">
+            <img src="../img/product12.png">
+            <h4 style="text-align: center">HP LaserJet Pro MFP 4101dw Printer</h4>
+            <p>A high qualily printer with multi-functionality, Touch screen interface And Duplex printing.</p>
+            <br>
+            <h4>$1000
+            </h4>
+            <button id="Added successfully12">Add To Cart</button>
+        </div>
+    </div>
+    
+    <div id="thankYouMessage" class="popup-message">
+        Thank you for adding the product to your cart!
+    </div>
+
+    
+  <!------------------------------FOOTER--------------------------------->
+  <footer style="background-color: #284344;">
+    <div class="flex con" style="justify-content:space-around ; gap: 40px; align-items: start;">
+      <div>
+        <h4>Business & Products</h4>
+        <ul>
+          <li><a href="">Product Support</a></li>
+          <li><a href="">Product Support Assistant</a></li>
+          <li><a href="">Terms of Sale(Opens in a new tab)</a></li>
+          <li><a href="">Product Registration</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>About Team 3</h4>
+        <ul>
+          <li><a href="./aaviskarCV.html">Aviskar</a></li>
+          <li><a href="./ronishCV.html">Ronish</a></li>
+          <li><a href="./santoshiCV.html">Santoshi</a></li>
+          <li><a href="./devanshiCV.html">Devanshi</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Researches</h4>
+        <ul>
+            <li><a href="https://www.nike.com/" target="_blank">Nike</a></li>
+            <li><a href="https://www.brother-usa.com/home/printers-fax" target="_blank">Brother</a></li>
+            <li><a href="https://www.usa.canon.com/" target="_blank">Canon</a></li>
+            <li><a href="https://www.adidas.com/us" target="_blank">Addidas</a></li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <h4>Contacts</h4>
+        <ul class="flex" style="gap: 10px;">
+          <li><a href=""><img src="../img/facebook-logo.png" width="20px" alt=""></a></li>
+          <li><a href=""><img src="../img/instagram-logo.png" width="20px" alt=""></a></li>
+          <li><a href=""><img src="../img/linkedin.png" width="20px" alt=""></a></li>
+          <li><a href=""><img src="../img/twitter.png" width="20px" alt=""></a></li>
+        </ul>
+        <p><a style="font-weight: bold; color: #F9E8D9;" href="./contact.html">Sign-Up</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div style="text-align: center; background-color: #ffcaa2; color: #284344; padding: 15px 0px; font-size: 16px;">
+    <p>&copy; PrintMakers. ALL RIGHTS RESERVED. </p>
+  </div>
+
+    <script>
+        // Function to show the "thank you" message
+        function showThankYouMessage() {
+            var thankYouMessage = document.getElementById('thankYouMessage');
+            thankYouMessage.style.display = 'block';
+
+            // Set a timeout to hide the message after 3 seconds 
+            setTimeout(function () {
+                thankYouMessage.style.display = 'none';
+            }, 3000);
+        }
+
+        // Event listeners for the "Add To Cart" buttons
+        document.getElementById('Added successfully').addEventListener('click', function () {
+            showThankYouMessage();
+        });
+        document.getElementById('Added successfully2').addEventListener('click', function () {
+            showThankYouMessage();
+        });
+        document.getElementById('Added successfully3').addEventListener('click', function () {
+            showThankYouMessage();
+        });
+        document.getElementById('Added successfully4').addEventListener('click', function () {
+            showThankYouMessage();
+        });
+        document.getElementById('Added successfully5').addEventListener('click', function () {
+            showThankYouMessage();
+        });
+        document.getElementById('Added successfully6').addEventListener('click', function () {
+            showThankYouMessage();
+        });
+        document.getElementById('Added successfully7').addEventListener('click', function () {
+            showThankYouMessage();
+        });
+        document.getElementById('Added successfully8').addEventListener('click', function () {
+            showThankYouMessage();
+        });
+        document.getElementById('Added successfully9').addEventListener('click', function () {
+            showThankYouMessage();
+        });
+        document.getElementById('Added successfully10').addEventListener('click', function () {
+            showThankYouMessage();
+        });
+        document.getElementById('Added successfully11').addEventListener('click', function () {
+            showThankYouMessage();
+        });
+        document.getElementById('Added successfully12').addEventListener('click', function () {
+            showThankYouMessage();
+        });
+
+
+    </script>
+</body>
+
+</html>

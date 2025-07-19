@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Printer e-commerce site">
+    <meta name="keywords" content="Printer, Project, e-commerce">
+    <meta name="author" content="Ronish, Aviskar, Devanshi,Santoshi">
+    <title>PrintMakers | Contact</title>
+    <link rel="stylesheet" href="../style/index.css">
+    <style>
+        /*CSS FOR CONTACT PAGE*/
+        .help {
+            text-align: left;
+            width: 60%;
+            color: #284344;
+        }
+
+        .help h2 {
+            font-size: 30px;
+        }
+
+        .help form {
+            padding-top: 30px;
+        }
+
+        .help form input {
+            width: 100%;
+            border: #284344 3px solid;
+            background-color: #fff7ef;
+            color: #284344;
+            height: 30px;
+        }
+
+
+        .double-card {
+            padding: 10px 40px;
+            margin-top: 20px;
+        }
+
+        .card {
+            border: 2px solid #284344;
+            width: 45%;
+            text-align: center;
+            padding: 40px 0px;
+            background-color: #fff7ef;
+            box-shadow: 2px 2px 5px 2px #284344;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+
+        .card a {
+            color: #284344;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .sign-up {
+            padding: 30px 50px;
+            border: 3px solid #ffcaa2;
+            color: #fff7ef;
+        }
+
+        .sign-up p {
+            font-size: small;
+            padding-left: 8px;
+        }
+
+        .sign-up input {
+            width: 70%;
+            height: 20px;
+        }
+
+        .sign-up a {
+            color: #fff7ef;
+        }
+
+        .sign-up-button {
+            margin-top: 10px;
+            background-color: #ffcaa2;
+            color: #284344;
+            max-width: 60px;
+            font-weight: bold;
+            border: none;
+        }
+
+        .sign-up-button:hover {
+            color: #ffcaa2;
+            background-color: #284344;
+            transition: 0.5s;
+        }
+
+        .message {
+            color: #fff7ef;
+            border: #ffcaa2 2px solid;
+            margin-top: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--PROVIING HEADER TAG-->
+    <header>
+        <div class="con"> <!--Wrapper for Header-->
+            <ul class="header">
+                <li><a href="">|| Help ||</a></li>
+                <li><a href="">Find Us ||</a></li>
+                <li><a href="./contact.html">Sign In ||</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--PROVIDING NAV TAG FOR NAVIGATION-->
+    <nav>
+        <div class="con">
+            <div class="flex navbar""><!--WRAPPER FOR NAVIGATION BAR USING FLEXBOX-->
+                <div class=" logo"><!--CREATING DIV FOR PROVIDING LOGO-->
+                <a href="../index.html">
+                    <h1>Print<span style="color: #ffcaa2 ;">Makers</span> </h1>
+                </a>
+            </div>
+            <div class="pages"><!--CREATING DIV FOR PROVIDING NAVIGATION BAR-->
+                <ul class="flex" style="gap: 10px;"><!--USING FLEX-->
+                    <li><a class="" href="../index.html">HOME</a></li>
+                    <li><a class="" href="blogpage.html">BLOG</a></li>
+                    <li><a class="" href="product.html">PRODUCTS</a></li>
+                    <li><a class="" href="research.html">RESEARCH</a></li>
+                    <li><a class="" href="about.html">ABOUT US</a></li>
+                    <li><a class="current" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div><!--CREATING DIV FOR ICON BAR-->
+            <div>
+                <ul class="flex" style="gap: 10px;"><!--USING FLEX-->
+                    <li><input class="search" type="search" style="" name="search" id="" placeholder=" Search"></li>
+                    <li><a href=""><img src="../img/hearts.png" width="20px" alt=""></a></li>
+                    <li><a href=""><img src="../img/shopping-cart-black-shape.png" width="20px" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!--THIS SECTION COVER THE MAIN CONTENT OF CONTACT PAGE-->
+    <main style="background-color: #F9E8D9;"> 
+        <!--THIS SECTION COVERS HOW THE COMPANY CAN HELP YOU-->
+        <section class="flex con" style="padding-top: 30px; align-items: start; padding-bottom: 50px;">
+            <div class="help">
+                <h2>How can we help you?</h2>
+                <p>In order to get you to the right support information or connect you with a team member, please enter
+                    your model number in the search box below. You can also search your machine's model number to find
+                    support options most suited to your individual needs.</p>
+                <form action="">
+                    <input type="search" name="search"
+                        placeholder="Search for a questions. Like: How to install driver?">
+                </form>
+                <!--THIS DIVISION COVERS THE SELF-SERVICES-->
+                <h3 style="padding-top: 50px;">Self Services</h3>
+                <div>
+                    <div class="flex double-card">
+                        <div class="card">
+                            <img src="../img/contact_1.png" width="40px" alt="">
+                            <a href="">
+                                <p>Reset Password</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <img src="../img/contact_2.png" width="40px" alt="">
+                            <a href="">
+                                <p>Payment Options</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex double-card">
+                        <div class="card">
+                            <img src="../img/contact_3.png" width="40px" alt="">
+                            <a href="">
+                                <p>Profile</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <img src="../img/contact_4.png" width="40px" alt="">
+                            <a href="">
+                                <p>Address Book</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--FORM VALIDATION SECTION TO CHAT WITH THE COMPANY-->
+            <div>
+                <div style="display: block;" id="mainSign">
+                    <div style="background: #284344;" class="sign-up">
+                        <h2 id="sign-up">Sign-Up to chat with us</h2>
+                        <h4 id="create_your_acc">CREATE YOUR ACCOUNT</h4>
+                        <br>
+                        <form action="" name="signUpForm" onsubmit="signUp()">
+                            <p>USERNAME</p>
+                            <input type="text" name="uname" id="">
+                            <br>
+                            <p>EMAIL</p>
+                            <input type="email" name="email" id="">
+                            <br>
+                            <br>
+                            <p>PASSWORD</p>
+                            <input type="password" name="password" id="">
+                            <p id="confirm_pass">CONFIRM PASSWORD</p>
+                            <input type="password" name="compassword" id="compassword">
+                            <br>
+                            <br>
+                            <input type="submit" class="sign-up-button" name="" id="buttonSignUp" value="Sign Up">
+                        </form>
+                        <button onclick="signIn()" id="account"
+                            style="color: #F9E8D9; background-color: transparent;cursor: pointer;"
+                            name="account">Already have an account?
+                            Sign-in.</button>
+                    </div>
+                </div>
+
+                <div style="display: none;" id="mainSignUp">
+                    <div style="background: #284344;" class="sign-up">
+                        <h2 id="sign-up">Sign-In to chat with us</h2>
+                        <br>
+                        <form action="" name="signInForm" onsubmit="signin()">
+                            <p>USERNAME</p>
+                            <input type="text" name="Uname" id="">
+                            <br>
+                            <p>EMAIL</p>
+                            <input type="email" name="Email" id="">
+                            <br>
+                            <br>
+                            <p>PASSWORD</p>
+                            <input type="password" name="Password" id="">
+                            <br>
+                            <br>
+                            <input type="submit" class="sign-up-button" name="" id="buttonSignUp" value="Sign In">
+                        </form>
+                        <button onclick="signIn()" id="account"
+                            style="color: #F9E8D9; background-color: transparent;cursor: pointer;" name="account">Don't
+                            have a account
+                            Sign-in.</button>
+                    </div>
+                </div>
+
+                <div class="message" style="background-color: #284344;">
+                    <h4>Leave us a message!</h4>
+                    <textarea name="" id="" cols="45" rows="10"></textarea><br>
+                    <input type="submit" class="sign-up-button" name="" id="" value="Send" style="padding: 5px;">
+                </div>
+            </div>
+            </div>
+
+        </section>
+    </main>
+    <!------------------------------FOOTER--------------------------------->
+    <footer style="background-color: #284344;">
+        <div class="flex con" style="justify-content:space-around ; gap: 40px; align-items: start;">
+            <div>
+                <h4>Business & Products</h4>
+                <ul>
+                    <li><a href="">Product Support</a></li>
+                    <li><a href="">Product Support Assistant</a></li>
+                    <li><a href="">Terms of Sale(Opens in a new tab)</a></li>
+                    <li><a href="">Product Registration</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>About Team 3</h4>
+                <ul>
+                    <li><a href="./aaviskarCV.html">Aviskar</a></li>
+                    <li><a href="./ronishCV.html">Ronish</a></li>
+                    <li><a href="./santoshiCV.html">Santoshi</a></li>
+                    <li><a href="./devanshiCV.html">Devanshi</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Researches</h4>
+                <ul>
+                    <li><a href="https://www.nike.com/" target="_blank">Nike</a></li>
+                    <li><a href="https://www.brother-usa.com/home/printers-fax" target="_blank">Brother</a></li>
+                    <li><a href="https://www.usa.canon.com/" target="_blank">Canon</a></li>
+                    <li><a href="https://www.adidas.com/us" target="_blank">Addidas</a></li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <h4>Contacts</h4>
+                <ul class="flex" style="gap: 10px;">
+                    <li><a href=""><img src="../img/facebook-logo.png" width="20px" alt=""></a></li>
+                    <li><a href=""><img src="../img/instagram-logo.png" width="20px" alt=""></a></li>
+                    <li><a href=""><img src="../img/linkedin.png" width="20px" alt=""></a></li>
+                    <li><a href=""><img src="../img/twitter.png" width="20px" alt=""></a></li>
+                </ul>
+                <p><a style="font-weight: bold; color: #F9E8D9;" href="./contact.html">Sign-Up</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <div style="text-align: center; background-color: #ffcaa2; color: #284344; padding: 15px 0px; font-size: 16px;">
+        <p>&copy; PrintMakers. ALL RIGHTS RESERVED. </p>
+    </div>
+    <script src="../script/contact.js"></script>
+</body>
+
+</html>
